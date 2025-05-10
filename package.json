@@ -1,14 +1,18 @@
 {
+  "homepage": "https://jatinsaini000.github.io/Mosam-Khabar/",
   "name": "react-weather-app",
   "version": "0.2.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "prettier": "^1.18.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
